@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="78.0" prefHeight="423.0" prefWidth="400.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="encryptButton" layoutX="41.0" layoutY="159.0" mnemonicParsing="false" style="-fx-background-color: #349f31#349f31;" text="Зашифровать" textOverrun="CLIP">
+               <font>
+                  <Font name="PT Mono Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="decipherButton" layoutX="204.0" layoutY="159.0" mnemonicParsing="false" style="-fx-background-color: #e91e1e#e91e1e;" text="Расшифровать" textOverrun="CLIP">
+               <font>
+                  <Font name="PT Mono Bold" size="16.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="encryptText" layoutX="41.0" layoutY="25.0" prefHeight="120.0" prefWidth="300.0" promptText="Введите текст..." />
+            <TextArea fx:id="encryptAns" layoutX="41.0" layoutY="212.0" prefHeight="120.0" prefWidth="300.0" />
+            <Text fontSmoothingType="LCD" layoutX="41.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ключ">
+               <font>
+                  <Font name="Luminari" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="key" layoutX="97.0" layoutY="353.0" prefWidth="44.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="70.0" layoutY="7.0" text="Шифр Цезаря" textFill="#f2901f">
+         <font>
+            <Font name="Brush Script MT Italic" size="52.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
